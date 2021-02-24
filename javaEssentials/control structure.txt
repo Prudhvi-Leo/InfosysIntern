@@ -1,0 +1,18 @@
+import java.lang.*;
+class Tester{
+	public static void main(String[] args) {
+		int a = 1523;
+		int b = a;
+		int sum =0;
+		while(a!=0){
+		    int rem = a%10;
+		    sum = sum + (int)Math.pow(rem,2);
+		    a = a/10;
+		    a = a/10;
+		}
+		if(sum%9==0)
+		System.out.println("The number "+b+" is a Lucky number");
+		else
+		System.out.println("Oops! Not a Lucky number");
+	}
+}
